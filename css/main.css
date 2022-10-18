@@ -191,10 +191,10 @@ h6 { font-size: 16px; }
 	font-weight:800 !important;
 }
 .text-uppercase{
-	text-transform:uppercase !important;	
+	text-transform:uppercase !important;
 }
 .text-lowercase{
-	text-transform:lowercase !important;	
+	text-transform:lowercase !important;
 }
 .link{
 	text-decoration:underline;
@@ -204,7 +204,7 @@ h6 { font-size: 16px; }
 	color:#c5c8c9;
 }
 .link:hover{
-	color:#7cbf1d;	
+	color:#7cbf1d;
 }
 .head-grey h2,.head-grey h3{
     color: #444E5A;
@@ -442,6 +442,8 @@ label{
     color: #fff;
     padding:130px 0 60px 0;
     font-size: 18px;
+    background-position: 0 10%;
+
 }
 .navbar_style{
     background: #000;
@@ -493,7 +495,7 @@ label{
 }
 .eschool .features{
     font-size: 12px;
-    line-height: 25px;   
+    line-height: 25px;
 }
 .eschool .features .parallax_inner{ padding-top: 0; }
 .eschool .feature .fa{
@@ -533,10 +535,10 @@ label{
 }
 .eschool .feature:nth-child(1) span:before,.eschool .feature:nth-child(1) h5:before,
 .eschool .excellence ul li:nth-child(1):before,.eschool .demo3 .excellence ul li:nth-child(1) span
-{ background: #5A9BD1; } 
+{ background: #5A9BD1; }
 .eschool .feature:nth-child(2) span:before,.eschool .feature:nth-child(2) h5:before,
 .eschool .excellence ul li:nth-child(2):before,.eschool .demo3 .excellence ul li:nth-child(2) span
-{ background: #FFC000; } 
+{ background: #FFC000; }
 .eschool .feature:nth-child(3) span:before,.eschool .feature:nth-child(3) h5:before,
 .eschool .excellence ul li:nth-child(3):before,.eschool .demo3 .excellence ul li:nth-child(3) span
 { background: #ffc000; }
@@ -553,7 +555,7 @@ label{
 }
 .pb-extra{ padding-bottom: 170px;}
 .eschool .mtm .feature-wrapper{ margin-top: -50px; }
-.eschool .excellence{ 
+.eschool .excellence{
     font-size: 16px;
     padding-bottom: 0;
     padding-top: 70px;
@@ -577,7 +579,7 @@ label{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    
+
 }
 .eschool .excellence .mt-minus{
     margin-top: -50px;
@@ -646,14 +648,14 @@ footer{
 }
 .eschool .demo2 .our-courses{ background-image:url(../img/BG2.jpg);  }
 .eschool .demo2 .our-courses .overlay{background: rgba(255,255,255,0.92); }
-.eschool .demo2 .our-courses .course{ 
+.eschool .demo2 .our-courses .course{
     border: 0;
     padding-left: 10px;
     color:#808080;
 }
 .eschool .our-courses{color: rgb(115, 172, 67);}
 .eschool .our-courses .course h5{ color: #808080;}
-.eschool .demo2 .our-courses .course_inner{ 
+.eschool .demo2 .our-courses .course_inner{
     background: #fff;
     padding: 32px 18px;
 }
@@ -702,8 +704,8 @@ footer{
     color: #000;
 }
 .eschool .demo3 .excellence p{
-    font-weight: 400; 
-    color:#808080; 
+    font-weight: 400;
+    color:#808080;
 }
 .eschool .demo3 .excellence ul{padding: 0; margin-top: 60px;}
 .eschool .demo3 .excellence li{clear: both; margin-bottom: 45px;}
@@ -938,7 +940,7 @@ iframe{
     margin-left: -44px;
     bottom: 0;
     width: 88px;
-    
+
 }
 .owl-controls .owl-dot span {
 	background: none;
@@ -1061,7 +1063,7 @@ iframe{
     border-bottom: 1px solid #f5f5f5;
     border-top: 1px solid #f5f5f5;
     padding: 15px 0 9px 0;
-    
+
 }
 .share h5 {
 	font-size: 15px;
@@ -1337,7 +1339,7 @@ a.load-more, .blog-post a.read-more {
     background: #508920;
     width: 230px;
     padding: 10px 5px;
-    display: none;        
+    display: none;
 }
     .navbar-custom nav li.active a:after,.navbar-custom nav li:hover a:after{
         display: none;
@@ -1373,7 +1375,7 @@ a.load-more, .blog-post a.read-more {
     .eschool .services i,.eschool .services figure{ float: none !important; }
     .eschool .services .info{padding: 0; margin-bottom: 35px;}
     .eschool .services{text-align: center;}
-    
+
     .pb-extra{padding-bottom: 50px;}
     .eschool .demo3 .excellence figure{margin-top: 50px;}
     .our-courses .course h5{
@@ -1410,7 +1412,7 @@ a.load-more, .blog-post a.read-more {
     .our-courses .mb-50{
         margin: 0;
     }
-    
+
 }
 /*===Break Point===*/
 @media (max-width: 600px) {
