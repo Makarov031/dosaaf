@@ -1,3 +1,10 @@
+<?php
+    $path =  dirname(__FILE__);
+    define("ROOT", $path);
+
+    require (ROOT.'/config/start.php');
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->
@@ -35,7 +42,7 @@ Body Content
 =======================================-->
 <div class="navbar-custom">
     <div class="container">
-        <a href="index.html" class="logo red">ДОСААФ</a>
+        <a href="index.php" class="logo red">ДОСААФ</a>
         <nav id="navbar">
             <a href="#" class="nav-triger"><span class="fa fa-navicon"></span></a>
             <ul class="main-menu nav">
