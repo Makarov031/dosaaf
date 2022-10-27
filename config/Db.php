@@ -6,8 +6,10 @@ class Db {
     static $pdo;
 
 
+
     public static function getPDO() {
         if (empty(self::$pdo)) {
+            $config = include (ROOT."/config/config.php");
             $opt = [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -18,7 +20,5 @@ class Db {
             self::$pdo = $pdo;
         }
         return self::$pdo;
-
-
     }
 }

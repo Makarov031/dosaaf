@@ -1,11 +1,15 @@
 <?php
+session_start();
 $config = include (ROOT."/config/config.php");
 require (ROOT."/config/Db.php");
-/*
-$db = new Db($config);*/
-var_dump(Db::$pdo);
-var_dump(Db::getPDO());
-var_dump(Db::$pdo);
+require (ROOT."/config/Err.php");
 
-var_dump($db->getPDO());
-die();
+function dump($var) {
+    echo "<pre>";
+    var_dump($var);
+    echo "</pre>";
+}
+
+/*$result = Db::getPDO()->query("SELECT * FROM `claims`")->fetchAll();
+$result = Db::getPDO()->prepare("UPDATE `claims` SET `name` = 'Юрий3' WHERE `claims`.`id` = 2;")->execute();*/
+

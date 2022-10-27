@@ -1,7 +1,6 @@
 <?php
     $path =  dirname(__FILE__);
     define("ROOT", $path);
-
     require (ROOT.'/config/start.php');
 ?>
 
@@ -62,15 +61,24 @@ Body Content
     <div class="container">
         <div class="headerInner">
             <h2>Автошкола "ДОСААФ"<br>Димитровград</h2>
-            <p>Отправить заявку на <b class="red">обучение</b></p>
+            <?php if (!$_SESSION['formsended'] == true) { ?>
+                <p>Отправить заявку на <b class="red">обучение</b></p>
+            <?php } ?>
             <div class="row mt-30">
                 <div class="col-md-4 col-sm-6">
-                	<form>
-                    	<input type="text" placeholder="Ваше Имя">
-						<input type="email" placeholder="Ваш Email">
-                    	<input type="tel" placeholder="Ваш номер телефона">
-						<button class="btn btn-default btn-head mt-20 mb-50">Отправить заявку</button>
-                	</form>
+                    <?php if ($_SESSION['formsended'] == true) { ?>
+                        <h5 style="margin-bottom: 300px;" class="red">Заявка была отправлена</h5>
+                    <?php } else { ?>
+                        <form method="post" action="/form.php">
+                            <?= Err::error("name") ?>
+                            <input name="name" type="text" placeholder="Ваше Имя" value="<?= Err::getField("name") ?>">
+                            <?= Err::error("email") ?>
+                            <input name="email" type="email" placeholder="Ваш Email" value="<?= Err::getField("email") ?>">
+                            <?= Err::error("phone") ?>
+                            <input name="phone" type="tel" placeholder="Ваш номер телефона" value="<?= Err::getField("phone") ?>">
+                            <button class="btn btn-default btn-head mt-20 mb-50">Отправить заявку</button>
+                        </form>
+                    <?php } ?>
                 </div>
             </div>
         </div>
