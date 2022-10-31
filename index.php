@@ -5,13 +5,13 @@
 ?>
 
 <!DOCTYPE html>
-<!--[if lte IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lte IE 9]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->
 <html class="no-js">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Одностраничный шаблон сайта Landing Page от bayguzin.ru</title>
+<title>ДОСААФ - АВТОШКОЛА ДИМИТРОВГРАД</title>
 <!--=================================
 Meta tags
 =================================-->
